@@ -1,5 +1,5 @@
 html  {
-    background: #e83cff;
+    background: #000000;
     font-family: 'Noto Serif', serif;
     text-align: center;
 }
@@ -17,11 +17,17 @@ h1 {
     margin: 0;
 }
 
+p {
+    color: #fff;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
 .nowplaying {
     font-size: 120px;
     line-height: 1;
     color: #eee;
-    text-shadow: 0 0 5rem #028ae9;
+    text-shadow: 0 0 5rem #e90007;
     transition: all .07s ease;
     min-height: 120px;
 }
@@ -30,9 +36,9 @@ h1 {
     display: block;
     width: 100%;
     height: 350px;
-    max-width: 880px;
+    max-width: 1100px;
     position: relative;
-    margin: 40px 0 0 10px;
+    margin: 40px auto;
     cursor: none;
 }
 
@@ -48,14 +54,14 @@ h1 {
 
 .key:not(.sharp) {
     float: left;
-    width: 10%;
+    width: 7%;
     height: 100%;
     background: rgba(255, 255, 255, .8);
 }
 
 .key.sharp {
     position: absolute;
-    width: 6%;
+    width: 4%;
     height: 60%;
     background: #000;
     color: #eee;
@@ -64,44 +70,50 @@ h1 {
 }
 
 .key[data-key="87"] {
-    left: 7%;
+    left: 5%;
 }
 
 .key[data-key="69"] {
-    left: 17%;
+    left: 12%;
 }
 
 .key[data-key="84"]  {
-    left: 37%;
+    left: 26%;
 }
 
 .key[data-key="89"] {
-    left: 47%;
+    left: 33%;
 }
 
 .key[data-key="85"] {
-    left: 57%;
+    left: 40%;
 }
 
 .key[data-key="79"] {
-    left: 77%;
+    left: 54%;
 }
 
 .key[data-key="80"] {
-    left: 87%;
+    left: 61%;
 }
 
-/*.key[data-key="67"] {
-    left: 120%;
-}*/
+.key[data-key="221"] {
+    left: 75%;
+}
+
+.key[data-key="67"] {
+    left: 82%;
+}
+
+.key[data-key="66"] {
+    left: 89%;
+}
 
 .playing {
     transform: scale(.95);
-    border-color: #0100e9;
-    box-shadow: 0 0 1rem #0100e9;
+    border-color: #e90003;
+    box-shadow: 0 0 1rem #e90019;
 }
-
-
 
 .keys:hover .hints {
     opacity: 1;
